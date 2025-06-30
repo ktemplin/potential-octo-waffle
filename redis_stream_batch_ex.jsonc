@@ -1,0 +1,40 @@
+{
+  "session_id": "sess_20250629T143510_SN12345",
+  "equipment_sn": "NI-PXI-12345",
+  "batch_start_utc": "2025-06-29T14:36:00.000000Z",
+  "measurement_info": {
+    "name": "voltage",
+    "unit": "V",
+    "channel": "A"
+  },
+  "metadata": {
+    "test_profile": "power_on_stability_test",
+    "start_sequence_num": 16000,
+    "count": 100
+  },
+  "points": [
+    {
+      "offset_ms": 0,
+      "value": 4.987
+    },
+    {
+      "offset_ms": 10,
+      "value": 4.988
+    },
+    {
+      "offset_ms": 990,
+      "value": 4.986
+    }
+  ]
+}
+
+// Alternative option to nest batch values, less readable, but programatically more performant
+// {
+//   "session_id": "sess_20250629T143510_SN12345",
+//   "equipment_sn": "NI-PXI-12345",
+//   "batch_start_utc": "2025-06-29T14:36:00.000000Z",
+//   "measurement_info": { "name": "voltage", "unit": "V", "channel": "A" },
+//   "metadata": { "start_sequence_num": 16000, "count": 100 },
+//   "offsets_ms": [0, 10, 20, /* ... */, 990],
+//   "values": [4.987, 4.988, 4.989, /* ... */, 4.986]
+// }

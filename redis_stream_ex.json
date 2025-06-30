@@ -1,0 +1,15 @@
+{
+  "session_id": "sess_20250629T143510_SN12345",
+  "equipment_sn": "NI-PXI-12345",
+  "timestamp_utc": "2025-06-29T14:35:10.123456Z",
+  "measurement": {
+    "name": "voltage",
+    "value": 4.987,
+    "unit": "V",
+    "channel": "A"
+  },
+  "metadata": {
+    "test_profile": "power_on_stability_test",
+    "sequence_num": 15032
+  }
+}
